@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Courses - Cyber Crush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1017;
+            color: #d1e2f4;
+        }
+        .font-hacker {
+            font-family: 'Share Tech Mono', monospace;
+        }
+        .glow-text {
+            text-shadow: 0 0 3px #38bdf8, 0 0 6px #38bdf8;
+        }
+        .btn-glow {
+            box-shadow: 0 0 3px #38bdf8, 0 0 6px #38bdf8;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-sky-400 font-hacker min-h-screen">
+
+<header class="sticky top-0 z-50 bg-gray-900 border-b border-sky-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex-shrink-0">
+                <a class="text-2xl font-extrabold glow-text select-none text-sky-400" href="index.html">Cyber Crush</a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sky-400 font-semibold text-sm tracking-wide">
+                <a class="hover:text-sky-200 transition" href="courses.html">Courses</a>
+                <a class="hover:text-sky-200 transition" href="instructor-dashboard.html" id="dashboardLink" style="display: none;">Dashboard</a>
+                <a class="hover:text-sky-200 transition" href="login.html" id="authLink">Sign In</a>
+            </div>
+            <div class="md:hidden">
+                <button aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" class="text-sky-400 hover:text-sky-200 focus:outline-none focus:ring-2 focus:ring-sky-400" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="md:hidden hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800 border-t border-sky-700">
+            <a class="block px-3 py-2 rounded-md text-base font-semibold text-sky-400 hover:text-sky-200 hover:bg-gray-700 transition" href="courses.html">Courses</a>
+            <a class="block px-3 py-2 rounded-md text-base font-semibold text-sky-400 hover:text-sky-200 hover:bg-gray-700 transition" href="instructor-dashboard.html" id="mobileDashboardLink" style="display: none;">Dashboard</a>
+            <a class="block px-3 py-2 rounded-md text-base font-semibold text-sky-400 hover:text-sky-200 hover:bg-gray-700 transition" href="login.html" id="mobileAuthLink">Sign In</a>
+        </div>
+    </div>
+</header>
+
+<main class="py-16">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <h2 class="text-4xl font-bold glow-text text-center mb-12 font-hacker">Our Courses</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">CC Certified Hacker</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Learn ethical hacking from scratch to professional level.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Web Security Bootcamp</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Master web penetration testing and secure web applications.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Network Defense Pro</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Defend networks against cyber threats and attacks.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Malware Analysis</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Dissect malicious software to understand its behavior.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Cloud Security Master</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Secure cloud infrastructure on AWS, Azure and GCP.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Mobile Pentesting</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Find and exploit vulnerabilities in Android and iOS apps.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Digital Forensics</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Recover and analyze digital evidence from cyber crimes.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">IoT Security</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Secure Internet of Things (IoT) devices and networks.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Red Teaming Basics</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Learn to simulate cyber attacks to test security defenses.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Blue Teaming Fundamentals</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Learn to defend against cyber threats and respond to incidents.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Reverse Engineering</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Analyze software and hardware to understand its inner workings.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Ethical Phishing</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Learn to create and manage ethical phishing campaigns.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">OSINT Fundamentals</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Master Open-Source Intelligence gathering techniques.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Threat Hunting</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Proactively search for cyber threats in a network.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-sky-600 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2 font-hacker">Security Operations Center (SOC)</h3>
+                    <p class="text-sky-300 mb-4 font-hacker">Learn to work in a security operations center.</p>
+                </div>
+                <a href="view-course.html" class="inline-block text-center px-4 py-2 bg-sky-500 text-gray-900 font-semibold rounded-md btn-glow hover:bg-sky-600 transition font-hacker">View Course</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="py-8 text-center text-sky-600 text-sm font-hacker select-none">
+    © 2025 Cyber Crush. All rights reserved.
+</footer>
+
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+        mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    const dashboardLink = document.getElementById('dashboardLink');
+    const mobileDashboardLink = document.getElementById('mobileDashboardLink');
+    const authLink = document.getElementById('authLink');
+    const mobileAuthLink = document.getElementById('mobileAuthLink');
+
+    const isLoggedIn = localStorage.getItem('isInstructorLoggedIn') === 'true';
+
+    if (isLoggedIn) {
+        dashboardLink.style.display = 'block';
+        mobileDashboardLink.style.display = 'block';
+
+        authLink.href = '#';
+        authLink.textContent = 'Sign Out';
+        authLink.addEventListener('click', () => {
+            localStorage.removeItem('isInstructorLoggedIn');
+            window.location.reload();
+        });
+
+        mobileAuthLink.href = '#';
+        mobileAuthLink.textContent = 'Sign Out';
+        mobileAuthLink.addEventListener('click', () => {
+            localStorage.removeItem('isInstructorLoggedIn');
+            window.location.reload();
+        });
+    } else {
+        dashboardLink.style.display = 'none';
+        mobileDashboardLink.style.display = 'none';
+        authLink.href = 'login.html';
+        mobileAuthLink.href = 'login.html';
+    }
+</script>
+</body>
+</html>

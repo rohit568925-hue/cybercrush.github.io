@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Course Details - Cyber Crush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1017;
+            color: #d1e2f4;
+        }
+        .font-hacker {
+            font-family: 'Share Tech Mono', monospace;
+        }
+        .glow-text {
+            text-shadow: 0 0 3px #38bdf8, 0 0 6px #38bdf8;
+        }
+        .btn-glow {
+            box-shadow: 0 0 3px #38bdf8, 0 0 6px #38bdf8;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-sky-400 font-hacker min-h-screen">
+
+<header class="sticky top-0 z-50 bg-gray-900 border-b border-sky-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex-shrink-0">
+                <a class="text-2xl font-extrabold glow-text select-none text-sky-400" href="index.html">Cyber Crush</a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sky-400 font-semibold text-sm tracking-wide">
+                <a class="hover:text-sky-200 transition" href="courses.html">Courses</a>
+                <a class="hover:text-sky-200 transition" href="instructor-dashboard.html">Dashboard</a>
+                <a class="hover:text-sky-200 transition" href="#">Sign In</a>
+            </div>
+            <div class="md:hidden">
+                <button aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" class="text-sky-400 hover:text-sky-200 focus:outline-none focus:ring-2 focus:ring-sky-400" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="md:hidden hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800 border-t border-sky-700">
+            <a class="block px-3 py-2 rounded-md text-base font-semibold text-sky-400 hover:text-sky-200 hover:bg-gray-700 transition" href="courses.html">Courses</a>
+            <a class="block px-3 py-2 rounded-md text-base font-semibold text-sky-400 hover:text-sky-200 hover:bg-gray-700 transition" href="instructor-dashboard.html">Dashboard</a>
+            <a class="block px-3 py-2 rounded-md text-base font-semibold text-sky-400 hover:text-sky-200 hover:bg-gray-700 transition" href="#">Sign In</a>
+        </div>
+    </div>
+</header>
+
+<main class="py-16">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        <h2 class="text-4xl font-bold glow-text text-center mb-12 font-hacker">CC Certified Hacker</h2>
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-sky-600">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <p class="text-lg text-sky-300 mb-4 font-hacker">
+                            यह कोर्स आपको एथिकल हैकिंग और साइबर सुरक्षा में महारत हासिल करने में मदद करेगा। आप शुरू से लेकर एडवांस स्तर तक सब कुछ सीखेंगे।
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 mb-6 text-sky-300 font-hacker">
+                            <li>Module 1: Introduction to Cyber Security</li>
+                            <li>Module 2: Network Scanning and Vulnerability Analysis</li>
+                            <li>Module 3: System Hacking & Malware</li>
+                            <li>Module 4: Web Application Security</li>
+                            <li>Module 5: Wireless Network Hacking</li>
+                            <li>Module 6: Cloud Security</li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="https://wa.me/9244903314?text=Hello, I want to enroll in the CC Certified Hacker course." class="inline-block w-full text-center px-8 py-4 bg-green-500 text-gray-900 font-semibold rounded-md shadow-lg hover:bg-green-600 transition font-hacker">
+                            <i class="fab fa-whatsapp mr-2"></i>Enroll Now
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-700 rounded-lg overflow-hidden flex items-center justify-center p-4 border border-sky-600">
+                    <img src="https://via.placeholder.com/500x300.png?text=Course+Image" alt="Course Image" class="w-full h-auto object-cover"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="py-8 text-center text-sky-600 text-sm font-hacker select-none">
+    © 2025 Cyber Crush. All rights reserved.
+</footer>
+
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+        mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+</body>
+</html>
